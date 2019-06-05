@@ -171,10 +171,11 @@ namespace TachoServiceClient.ViewModels
             param.Beginreportdatetime = new DateTime(2014, 01, 01).ToUniversalTime();
             param.Endreportdatetime = new DateTime(2018, 01, 01).ToUniversalTime();
             param.Legislation = CurrentLegislation;
-            param.MaxCarAnalisis = 10;
-            param.MaxShiftNumber = 50;
-            param.MaxVioaltionNumber = 50;
-
+           
+             //not implement yet for tachoclient
+            /*param.MaxCarAnalisis = 0;
+            //param.MaxShiftNumber = 0;
+            //param.MaxVioaltionNumber = 0;*/
             param.Pin = Pin;
             return param;
         }
