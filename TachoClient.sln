@@ -1,0 +1,33 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TachoData", "TachoData\TachoData.shproj", "{130D6BF8-68FC-4BA7-B793-BDD82150EFE5}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TachoServiceClient", "TachoServiceClient\TachoServiceClient.shproj", "{7C941B19-0712-4EBC-9930-AA94825618B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TachoServiceClient.Android", "TachoServiceClient.Android\TachoServiceClient.Android.csproj", "{ACBC58E9-76BC-4243-BCC2-676369CF68A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACBC58E9-76BC-4243-BCC2-676369CF68A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACBC58E9-76BC-4243-BCC2-676369CF68A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACBC58E9-76BC-4243-BCC2-676369CF68A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACBC58E9-76BC-4243-BCC2-676369CF68A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACBC58E9-76BC-4243-BCC2-676369CF68A3}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{ACBC58E9-76BC-4243-BCC2-676369CF68A3}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{ACBC58E9-76BC-4243-BCC2-676369CF68A3}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{ACBC58E9-76BC-4243-BCC2-676369CF68A3}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{ACBC58E9-76BC-4243-BCC2-676369CF68A3}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{ACBC58E9-76BC-4243-BCC2-676369CF68A3}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{ACBC58E9-76BC-4243-BCC2-676369CF68A3}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{ACBC58E9-76BC-4243-BCC2-676369CF68A3}.Release|iPhone.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
