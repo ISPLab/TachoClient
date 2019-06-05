@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{130D6BF8-68FC-4BA7-B793-BDD82150EFE5}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>TachoData</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)TachoParms.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)P8EventData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TachoResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TachoViolation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ITachoHostFunctions.cs" />
+  </ItemGroup>
+</Project>

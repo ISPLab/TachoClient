@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="TachoServiceClient.App">
+    <Application.Resources>
+       <Style x:Key="H1Header" TargetType="Label">
+            <Setter Property="HorizontalOptions" Value="StartAndExpand" />
+            <Setter Property="HorizontalTextAlignment" Value="Start"/>
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="Large" />
+            <Setter Property="FontFamily" Value="Roboto" />
+            <Setter Property="TextColor" Value="Black" />
+        </Style>
+        <Style x:Key="H2Header" TargetType="Label">
+            <Setter Property="HorizontalOptions" Value="StartAndExpand" />
+            <Setter Property="HorizontalTextAlignment" Value="Start"/>
+            <Setter Property="VerticalTextAlignment" Value="Start"/>
+            <Setter Property="VerticalOptions" Value="Start" />
+            <Setter Property="FontSize" Value="Medium" />
+            <Setter Property="FontFamily" Value="Roboto" />
+            <Setter Property="TextColor" Value="Black" />
+        </Style>
+        <Style x:Key="H3Header" TargetType="Label">
+            <Setter Property="HorizontalOptions" Value="StartAndExpand" />
+            <Setter Property="HorizontalTextAlignment" Value="Start"/>
+            <Setter Property="VerticalTextAlignment" Value="Start"/>
+            <Setter Property="VerticalOptions" Value="Start" />
+            <Setter Property="FontSize" Value="Small" />
+            <Setter Property="FontFamily" Value="Roboto" />
+            <Setter Property="TextColor" Value="Black" />
+        </Style>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="HorizontalOptions" Value="Start" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="FontSize" Value="Small" />
+            <Setter Property="FontFamily" Value="Roboto" />
+            <Setter Property="TextColor" Value="Black" />
+        </Style>
+
+        <ControlTemplate x:Key="DefaultTemplate">
+            <Frame Margin="1,1,1,1" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.2*" />
+                    <RowDefinition Height="0.7*" />
+                    <RowDefinition Height="0.2*" />
+                </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.01*" />
+                        <ColumnDefinition Width="0.99*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Text= "{TemplateBinding Parent.BindingContext.MainHeader}"  Grid.ColumnSpan="2"  Style="{StaticResource H1Header}"/>
+                    <ContentPresenter Grid.Row="1" Grid.ColumnSpan="2" />
+                    <Button Grid.Row="2" Grid.ColumnSpan="2" HeightRequest="70" IsVisible="{TemplateBinding Parent.BindingContext.SmartButtonVisible}" WidthRequest="240" x:Name="butprocess" Text="{TemplateBinding Parent.BindingContext.PrbuttonText}" Command="{TemplateBinding Parent.BindingContext.ProcessCommand}" Style="{StaticResource ButtonStyle}" Margin="10,0,0,0" HorizontalOptions="EndAndExpand"  /> 
+            </Grid>
+            </Frame>
+        </ControlTemplate>
+    </Application.Resources>
+</Application>
