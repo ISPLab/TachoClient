@@ -174,7 +174,6 @@ namespace TachoServiceClient.ViewModels
             param.MaxCarAnalisis = 10;
             param.MaxShiftNumber = 50;
             param.MaxVioaltionNumber = 50;
-
             param.Pin = Pin;
             return param;
         }
