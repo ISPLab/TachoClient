@@ -16,6 +16,9 @@ namespace TachoHelper
 {
     public class TachoServiceConnection : Java.Lang.Object, IServiceConnection
     {
+
+     //   P8.Services.Logging.ILogger Logger = P8.Kernel.Server.P8PlatformSpecificManager.GetLogger();
+
         static readonly string TAG = "tachotag";
         public event EventHandler<P8EventData> P8Event;
         public TachoServiceConnection()
@@ -28,7 +31,7 @@ namespace TachoHelper
 
         public void OnServiceConnected(ComponentName name, IBinder service)
         {
-            Log.Debug(TAG, $"TachoHelper: OnServiceConnected {name.ClassName}");
+          // Logger.Debug( $"TachoHelper: OnServiceConnected {name.ClassName}");
             Messenger = new Messenger(service);
             IsConnected = this.Messenger != null;
             if (IsConnected)
@@ -46,7 +49,7 @@ namespace TachoHelper
         public void OnServiceDisconnected(ComponentName name)
         {
             P8Event?.Invoke(this, new P8EventData("tachocontroller","info", "tachoinfo", "Tacho Service disconnected", ""));
-            Log.Debug(TAG, $"TachoService disconnected {name.ClassName}");
+            Log.Debug("tachotag", $"TachoService disconnected {name.ClassName}");
         }
     }
 }

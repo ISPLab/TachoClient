@@ -53,7 +53,7 @@ namespace TachoServiceClient.Views
 
                             case ("tachoprogress"):
                                 // RFC1123 pattern  ddd, dd MMM yyyy HH':'mm':'ss 'UTC'
-                                preditor.Text += ev.EventUtcTime.ToLocalTime().ToString("dd.MM.yyyy HH:mm:ss") + " : " + ev.Description + Environment.NewLine;
+                                preditor.Text += ev.EventUtcTime.ToString("dd.MM.yyyy HH:mm:ss") + " : " + ev.Description + Environment.NewLine;
                                 ProgressLabel.Text = ev.Description;
                                 if (!String.IsNullOrEmpty(ev.Parametr.ToString()))
                                 {

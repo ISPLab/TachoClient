@@ -154,7 +154,7 @@ namespace TachoHelper
 
         public virtual void StartService()
         {
-            Log.Debug(TAG, "TachoHelper: Sending StartService cmd");
+           Logger.Debug( "TachoHelper: Sending StartService cmd");
             isStarting = false;
 
             if (!IsTachoServicePackageInstalled())
@@ -167,7 +167,7 @@ namespace TachoHelper
 
             if (HasPermissionToRunTachoService())
             {
-                Log.Debug(TAG, "TachoHelper: TachoService is calling...");
+               Logger.Debug( "TachoHelper: TachoService is calling...");
                 if (activityMessenger == null)
                 {
                     var mesr = new TachoServiceHandler();
@@ -201,7 +201,7 @@ namespace TachoHelper
                 }
                 Android.App.Application.Context.BindService(intentToBindService, serviceConnection, Bind.AutoCreate);
                 isStarting = true;
-                Log.Debug(TAG, "TachoHelper: TachoService has been called.");
+               Logger.Debug( "TachoHelper: TachoService has been called.");
             }
             else
             {
